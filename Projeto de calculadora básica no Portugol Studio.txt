@@ -1,0 +1,35 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x, y
+		caracter mat, cont
+		cont = 's'
+		enquanto (cont == 's'){
+			escreva ("Digite o primeiro valor para a operação \n")
+			leia (x)
+			escreva ("Digite o segundo valor para a operação \n")
+			leia (y)
+			escreva ("Digite o primeiro caracter da operação desejada: multiplicação(m), divisão(d), adição(a) ou subtração(s)\n")
+			leia (mat)
+			se (mat == 'm'){
+				escreva (x, " x ", y, " = ", x*y)
+			}
+			senao se (mat == 'd'){
+				escreva (x, " / ", y, " = ", x/y)
+			}
+			senao se (mat == 'a'){
+				escreva (x, " + ", y, " = ", x+y)
+			}
+			senao se (mat == 's'){
+				escreva(x, " - ", y, " = ", x-y)
+			}
+			senao{
+				escreva ("Operação inválida")
+			}
+			escreva ("\nDeseja continuar a realizar operações? (s/n)\n")
+			leia (cont)
+		}
+	}
+}
